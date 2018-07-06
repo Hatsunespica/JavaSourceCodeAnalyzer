@@ -15,7 +15,7 @@
 ** Example usage
    + see class: test.java.Main
 ** Notice
-   + When calculate Specialization Index, it may throw divide by 0 exception. Well, in this situation, maybe there is not inheritance tree in your project or project just contains one file. This err is a trivial situation so all you need is just a special judgment, say a "if-else". I am a little lazy, so I won't fix it even if I know this err. But if someone need it, I'll do it.
+   + When calculate Specialization Index, it may throw divide-by-0 exception. Well, in this situation, maybe there is not inheritance tree in your project or project just contains one file. This err is a trivial situation so all you need is just a special judgment, say a "if-else". I am a little lazy, so I won't fix it even if I know this err. But if someone need it, I'll do it.
    + Some exceptions may be thrown when you analyze project, don't be panic. read the info. I have written two exception class I'll cover follow. First, SameClassException, this exception be thrown when two different file in a same package declare a same class. Second, SuperClassNotFoundException,  a class inherit from a class which not is written in this project like a system class, or a class in an out library. First situation stands an err in your proj, and you shouldn't worry the second too much.
 ** Info about itself
 *** Basic architecture
